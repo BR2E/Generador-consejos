@@ -1,10 +1,84 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+:root {
+
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+html {
     font-size: 62.5%;
     font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--DarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container--text {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color: var(--DarkGrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container--text__numero {
+    display: flex;
+    color: var(--NeonGreen);
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+}
+
+.container--text__consejo {
+    text-align: center;
+    color: var(--LightCyan);
+}
+
+.icon1 {
+    display: inline-block;
+    width: 3rem;
+    height: 2rem;
+    background-image: url('../../images/pattern-divider-mobile.svg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 3rem;
+}
+
+button{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--NeonGreen);
+    position: absolute;
+    bottom: -3rem;
+    cursor: pointer;
+}
+
+button span{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../../images/icon-dice.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
 }

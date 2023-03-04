@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -19,15 +18,27 @@
 <body>
 
   <div class="container">
-    <div>
-      Advice #<span class="consejo--numero"></span>
-    </div>
-    <div>
-      "<p class="consejo--text"></p>""
+    <div class="container--text">
+
+      <div class="container--text__numero">
+        <p> Advice #</p><span class="consejo--numero" id="consejoNumero"></span>
+      </div>
+
+      <div class="container--text__consejo">
+        <p class="consejo--text" id="consejo"></p>
+      </div>
+
+      <div>
+        <span class="icon1"></span>
+      </div>
+
+      <button id="btn1"><span></span></button>
+
     </div>
   </div>
 
 
 </body>
+<script src="./src/index.js"></script>
 
 </html>
